@@ -31,7 +31,7 @@ public class User implements UserDetails {
   private String password;
 
   @Column(length = 100, unique = true)
-  private String nickName;
+  private String nickname;
 
   //해당 컬렉션을 별도의 테이블에 저장하는 방식
   //해당 부분만 저장됨
@@ -69,5 +69,12 @@ public class User implements UserDetails {
   @Override
   public boolean isEnabled() {
     return true;
+  }
+
+  public User update(String email, String nickname) {
+    this.email = email;
+    this.nickname = nickname;
+
+    return this;
   }
 }
