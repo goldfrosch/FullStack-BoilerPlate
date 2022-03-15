@@ -1,6 +1,8 @@
 server:
   port: 5120
 spring:
+  profiles:
+    include: oauth
   servlet:
     multipart:
       maxFileSize: 50MB
