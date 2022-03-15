@@ -22,7 +22,7 @@ public class SwaggerConfig {
         return new Docket(DocumentationType.SWAGGER_2)
                 .useDefaultResponseMessages(false)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.goldfrosch.webback"))
+                .apis(RequestHandlerSelectors.basePackage("com.goldfrosch"))
                 .paths(PathSelectors.ant("/**"))
                 .build()
                 .apiInfo(metaData())
