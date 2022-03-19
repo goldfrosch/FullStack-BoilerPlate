@@ -29,7 +29,7 @@ public class UserRestController {
   }
 
   @GetMapping("/find/email")
-  public Optional<User> findProfileByEmail(@RequestParam String email) {
+  public User findProfileByEmail(@RequestParam String email) {
     return userService.findByEmail(email);
   }
 }

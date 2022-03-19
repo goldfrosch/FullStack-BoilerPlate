@@ -26,3 +26,7 @@ spring:
     show-sql: false
     properties:
       hibernate.format_sql: true
+jwt:
+  header: Authorization
+  secret: sHoNL1BUCYoD1sXTGoR-aoqpyAzxk9RqNu-1HQquJ-Dg7nuV3k6XucaQPw0I9gZGMt1oRhdfRDwGAJ-JeqnkEg
+  token-validity-in-seconds: 86400
